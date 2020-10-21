@@ -8,7 +8,7 @@ The loop works twice... it should be redo.
 
 main()
 {
-/*First we will ise getchar() and putchar().
+/*First we will use getchar() and putchar().
 the idea is:
     read a character
     while(character != end of file indicator){

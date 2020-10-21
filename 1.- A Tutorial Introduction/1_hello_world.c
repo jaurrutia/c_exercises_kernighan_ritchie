@@ -1,5 +1,5 @@
 /*Jonathan Urrutia 2019/02/07
-This is the first code written in order to re-learn the basics of C.
+This is the first code writen in order to re-learn the basics of C.
 The goal is to understand the concept of functions in C.
 
 Excercises 1-1 & 1-2

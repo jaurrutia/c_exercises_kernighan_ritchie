@@ -29,20 +29,19 @@ while((c = getchar()) != EOF){
   if (c == '\\'){ ++nbs;}
   ++nc;
 }
-printf("\n There are is %ld characters, %d lines, %d tabs, %d blanks and %d back-slashes.\n", nc, nl, nt, nb, nbs );
+printf("\n There are %ld characters, %d lines, %d tabs, %d blanks and %d back-slashes.\n", nc, nl, nt, nb, nbs );
 
 printf("We replace all special characters to ist symbols:\n");
 while((c = getchar()) != EOF){
-  if(c == '\n'){ c = 'n';}
-  if(c == '\t'){ c = 't';}
-  if(c == '\\'){ c = '\\';}
-  if(c == ' ' ){ c = 'b';}
-  printf("\\");
+  if(c == '\n'){ c = 'n'; printf("\\");}
+  if(c == '\t'){ c = 't';} printf("\\");
+  if(c == '\\'){ c = '\\'; printf("\\");}
+  if(c == ' ' ){ c = 'b'; printf("\\");}
   putchar(c);
 }
 
 nb = 0;
-printf("We collaps all blanks to one:\n");
+printf("\n We collaps all blanks to one:\n");
 while((c = getchar()) != EOF){
   if(c ==  ' '){++nb;}
   if( nb == 0 ){ putchar(c);}

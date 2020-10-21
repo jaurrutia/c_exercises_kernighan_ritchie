@@ -17,6 +17,8 @@ printf("Write a string and end it with Ctr+D or run it with a file\n");
 
 for(nc = 0; getchar() != EOF; ++nc)  /*Similar to nc += 1, or nc++ yet different.*/
 ;              /*For a blanck loop, we only wirte ; instead of {...}*/
+              /* The prefix versions (++n) alter the variable and then pass along its value.
+               The postfix version (n++) pass along the current value and then alter the variable.*/
 printf("\n Using a for-loop, we get that the character is %ld long. \n", nc );
 
 }
